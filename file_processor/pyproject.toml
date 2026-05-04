@@ -1,0 +1,18 @@
+[project]
+name = "file-processor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "flagembedding>=1.4.0",
+    "glmocr[selfhosted]>=0.1.5",
+    "mlx-vlm",
+    "pgvector>=0.4.2",
+    "psycopg[binary]>=3.3.4",
+    "pymupdf>=1.27.2.3",
+    "transformers>=5.3.0",
+]
+
+[tool.uv.sources]
+mlx-vlm = { git = "https://github.com/Blaizzy/mlx-vlm.git" }
